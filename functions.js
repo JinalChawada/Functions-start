@@ -1,3 +1,6 @@
+/** Jinal Chawada
+ * 17th June 2020
+ */
 // This function returns a random number between (and including both) minimum and maximum
 function getRandomInteger (minimum, maximum) {
   minimum = Math.ceil(minimum) // minimum is inclusive
@@ -5,9 +8,9 @@ function getRandomInteger (minimum, maximum) {
   return Math.floor(Math.random() * (maximum - minimum)) + minimum
 }
 
-// change
 
-// hello it's me
+
+// hello My name is jinal chawada
 
 // June 17
 
@@ -15,24 +18,24 @@ function getRandomInteger (minimum, maximum) {
 
 
 
-let s = {name: 'Tony', address: 'Sussex Drive'}
+let s = {name: 'Jinal', address: 'Deerfield Drive'}
 
 
 
 // Povided Arrays
-const nouns = ['dragons', 'toasters', 'cars']
+const nouns = ['potting soil', 'pots', 'trees', 'plants', 'sucullent', 'ivy', 'monsteraplant', 'soils', 'waters', 'seeds']
 
-const verbs = ['walked', 'ran']
+const verbs = ['planted', 'moved', 'smelled', 'weeded', 'dugged', 'burned', 'pruned', 'deadheaded', 'washed', 'trimmed', 'sitted','cleaed']
 
-const adverbs = ['menacingly', 'intentionally']
+const adverbs = ['menacingly', 'intentionally', 'behind', 'away','outside', 'occassionally', 'normally', 'freshly', 'frequently', 'generally']
 
-const adjectives = ['wild', 'slippery']
+const adjectives = ['zoological', 'botanical', 'great sparse','roomy', 'beautiful', 'sizable', 'small', 'great', 'immense', 'large']
 
 const proNouns = ['they', 'we', 'you', 'he', 'she', 'I', 'it']
 
 const openings = ['Once upon a time', 'I watched']
 
-const closings = ['with extra cheese', 'the end']
+const closings = ['with extra water', 'the bloomed', 'with extra fertilizer', 'with extra sun light']
 
 // Instructions:
 
@@ -115,7 +118,12 @@ function createRandomSentence(){
   const randomSentence = openings[ getRandomInteger(0, openings.length - 1) ] + ' ' +
 
   // random adjective
-  adjectives[getRandomInteger(0, adjectives.length - 1)] + ' ' 
+  adjectives[getRandomInteger(0, adjectives.length - 1)] + ' ' +
+  nouns[getRandomInteger(0, nouns.length - 1)] + ' ' +
+  proNouns[getRandomInteger(0, proNouns.length -1)] + ' ' +
+  verbs[getRandomInteger(0, verbs.length -1)] + ' ' +
+  adverbs[getRandomInteger(0, adverbs.length -1)] + ' ' +
+  closings[getRandomInteger(0, closings.length -1)] + '.' 
 
   
   // random noun
@@ -137,10 +145,10 @@ function outputSentence( sentence){
 const numberOfSentences = 10
 
 for(let i = 0; i < numberOfSentences; i++){
-  // let randomSentence = createRandomSentence()
-  // outputSentence(randomSentence)
+   let randomSentence = createRandomSentence()
+   outputSentence(randomSentence)
 
-  outputSentence(createRandomSentence())
+ // outputSentence(createRandomSentence())
 }
 
 
