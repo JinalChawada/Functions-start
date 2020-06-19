@@ -9,13 +9,11 @@ function getRandomInteger (minimum, maximum) {
 }
 
 
-
 // hello My name is jinal chawada
 
 // June 17
 
 // cool I am also me!
-
 
 
 let s = {name: 'Jinal', address: 'Deerfield Drive'}
